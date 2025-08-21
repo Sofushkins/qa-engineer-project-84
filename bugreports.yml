@@ -26,8 +26,8 @@
 - summary: |
     При переводе сайта на русский язык, категории, производители и карточки товаров не переводятся 
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Открыть выпадающий список "Language"
@@ -44,8 +44,8 @@
 - summary: |
     Не отображается флаг английского языка при открытии выпадающего списка "Язык"
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Открыть выпадающий список "Language"
@@ -59,8 +59,8 @@
 - summary: |
     Нельзя очистить выбор категории
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Отыкрыть выпадающий список "Category"
@@ -75,8 +75,8 @@
 - summary: |
     Нет сообщения о успешном добавлении товара в корзину
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Прокрутить каталог товаров вниз
@@ -90,8 +90,8 @@
 - summary: |
     Нет сообщения о успешном добавлении товара в корзину
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Прокрутить каталог товаров вниз
@@ -105,8 +105,8 @@
 - summary: |
     Нет возможности указать сколько единиц товара добавлять в корзину
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Прокрутить каталог товаров вниз
@@ -119,8 +119,8 @@
 - summary: |
     Нет сообщения о пустой корзине
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Нажать на кнопку "Корзина" в навигационной панели
@@ -133,8 +133,8 @@
 - summary: |
     Отсутствует подтверждение перед оформлением заказа
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Нажать кнопку "Add to cart" у товара "Kiwi"
@@ -148,8 +148,8 @@
 - summary: |
     Отсутствует возможность оставить контактные данные при оформлении заказа
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Нажать кнопку "Add to cart" у товара "Kiwi"
@@ -163,8 +163,8 @@
 - summary: |
     Кнопка "Х" в модальном окне не закрывает окно после успешного оформления заказа
   environment: |
-    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
   steps-to-reproduce: |
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Нажать кнопку "Add to cart" у товара "Kiwi"
@@ -177,3 +177,78 @@
   actual-result: |
     Кнопка "Х" не реагирует на нажатие, модальное окно остается открытым.
 
+- summary: |
+    Корзина не очищается после успешного оформления заказа
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Add to cart" у любого товара
+    3. Нажать на кнопку "Cart" в навигационной панели
+    4. Нажать кнопку "Checkout"
+    5. Закрыть модальное окно
+  expected-result: |
+    Отображается пустая корзина
+  actual-result: |
+    В корзине все еще находятся оформленные товары
+
+- summary: |
+    Изображение товара сжато, вытянуто, обрезается или сплющенно в каталоге и в карточке
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+   Сценаарий 1
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Открыть пятую страницу каталога
+   Сценарий 2
+   1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+   2. Открыть пятую страницу каталога
+   3. Открыть карточку товара "Oppo K1"
+  expected-result: |
+    Изображения отображаются полностью в хорошем качестве, не видоизменяются
+    actual-result: |
+    Сценарий 1
+     Изображение сжимается или обрезается, отображается в плохом качестве
+    Сценарий 2
+     Изображение отображается в плохом качестве
+
+- summary: |
+    Нет подтверждения удаления товаров из корзины
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+   Сценарий 1
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Добавить 5 единиц любого товара в корзину
+    3. Перейти в корзину
+    4. Нажать кнопку "Delete" на строчке товара
+   Сценарий 2
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Добавить 5 единиц любого товара в корзину
+    3. Перейти в корзину
+    4. Нажать кнопку "Clear cart"
+  expected-result: |
+    Появляется модальное оконо или его альернатива для подтверждения действий пользователя
+    actual-result: |
+    Сценарий 1
+     Товар сразу же удаляется, количество единиц товара  уменьшается на 1
+    Сценарий 2
+     Корзина полностью очищается, удаляются все товары
+
+- summary: |
+    Товары возвращаются в корзину после её очистки и обновления страницы
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Добавить 5 единиц любого товара в корзину
+    3. Перейти в корзину
+    4. Нажать кнопку "Clear cart"
+  expected-result: |
+    Поле перезагрузки странциа остается пустой
+    actual-result: |
+    Все удаленные товары возвращаются в корзину после перезагрузки
