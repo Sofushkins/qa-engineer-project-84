@@ -300,6 +300,8 @@ bugreports:
       Изображения и текст не обрезаются и не перекрываются
     actual-result: |
       Панель фильтрации отображается после католога товаров. Для просмотра панели фильтрации надо прокручивать сайт вниз
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/11.png
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/12.png
 
  - summary: |
       При поиске несуществующего в каталоге товара, сайт не выдает сообщение "Ничего не найдено!"
@@ -313,6 +315,7 @@ bugreports:
       Сайт выдает сообщение "Ничего не найдено!", каталог товаров пуст
     actual-result: |
       Каталог товаров отображается без изменений, сообщение не появляется.
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/13.png
 
 - summary: |
       При наличии всех товаров в магазине, если снять отметку с чек-бокса "В наличие", сайт не показывает результата фильтрации (Ничего не найдено)
@@ -326,6 +329,7 @@ bugreports:
       Сайт выдает сообщание "Ничего не найдено!", потому что все товары в наличии
     actual-result: |
       Каталог товаров отображается без изменений, сообщение не появляется.
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/14.png
 
 - summary: |
       Товары фильтруются не по скидочной цене, а по цене до скидки
@@ -334,11 +338,12 @@ bugreports:
       macOS Sonoma 14.7.1
     steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-      2. Заполнить поле минимальной цены, значение "3"
+      2. Заполнить поле минимальной цены, значение "9"
     expected-result: |
       Товары фильтруются согласно заданному значению
     actual-result: |
-      Отображаются товары с ценой ниже 3, потому что их цена без скидки больше 3
+      Отображаются товары с ценой ниже 9, потому что их цена без скидки больше 9
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/15.png
 
 - summary: |
       При любом заполненном элементе фильтрации, исчезает кнопка перехода на следующую страницу
@@ -353,6 +358,7 @@ bugreports:
       есть возможность листать страницы каталога 
     actual-result: |
       Кнопка "Следующая" пропадает, невозможно сменить страницу каталога на следующую страницу
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/16.png
 
 - summary: |
       Кнопка "Следующая" на первой странице каталога и последующих имеет разное расположение
@@ -367,6 +373,8 @@ bugreports:
       Кнопка "Следующая" находится на том же месте, что и на первой странице
     actual-result: |
       Кнопка "Предыдущая" заменят собой кнопку "Следующая", обе кнопки смещаются вправо
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/17.png
+      https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/18.png
 
 - summary: |
       При переходе в каталог товаров через навигационную панель, происходит перезагрузка страницы
