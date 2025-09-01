@@ -20,9 +20,11 @@
    Сценарий 1
     Отображается сообщение "Nothing found!"
     Если нажать кнопку "Next", то карточка товара появляется, так как товар находится только на этой странице.
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/3.png
    Сценарий 2
     Значения выпадающего списка меняются с каждым нажатие на кнопку "Next"
     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/1.png
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/2.png
     
 - summary: |
     При переводе сайта на русский язык, категории, производители и карточки товаров не переводятся 
@@ -40,6 +42,7 @@
     Значения выпадающего списка "Категория" не переводятся
     Наименование и описание товара не переводятся ни в каталоге, н ив карточке
     Поле "Производитель" не переводится
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/4.png
 
 - summary: |
     Не отображается флаг английского языка при открытии выпадающего списка "Язык"
@@ -54,6 +57,8 @@
   actual-result: |
     Вместо флага Английского языка, отображается значок битого изображения
     DevTools показывает код 200
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/5.png
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/6.png
 
 - summary: |
     При перезагрузке сбрасывается выбор языка
@@ -211,6 +216,8 @@
      Изображение сжимается или обрезается, отображается в плохом качестве
     Сценарий 2
      Изображение отображается в плохом качестве
+     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/7.png
+     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/8.png
 
 - summary: |
     Нет подтверждения удаления товаров из корзины
@@ -265,6 +272,7 @@
     Навигационная панель адаптируется под экран: сохраняет пропорции, кнопки остаются на одной линии, не увеличивается высота блока
     actual-result: |
     Высота навигационной панели увеличивается в три раза, кнопки выравниваются по вертикали (магазин, корзина, язык)
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/9.png
 
 - summary: |
     При ширине экрана меньше 1200px ломается панель фильтрации: поля кнопки и наименования брендов выходят за границы блока
@@ -309,6 +317,7 @@
      Цена без скидки товара скрыта горизонтальной прокруткой и выезжает за границы товара
      кнопка "Удалить" на строке товара выезжает за границы строки товара
      Текст кнопки "Оформить заказ" выезжает за границы кнопки
+     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/10.png
 
 - summary: |
     После нажатия кнопка "Next" продолжает выделяться цветом до первого взаимодействия с сайтом
@@ -323,3 +332,4 @@
     Кнопка при нажатии выделяется цветом, после открытия следующей страницы, кнопка возвращает привычный цвет
     actual-result: |
     Кнопка выделяется до первого взаимодействия с сайтом после открытия следующей страницы
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/2.png
