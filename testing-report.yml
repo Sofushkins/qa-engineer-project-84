@@ -36,7 +36,6 @@
   status: pass
 
 - summary: |
-     - summary: |
     Успешный поиск товаров по категории
   status: pass
 
@@ -190,96 +189,96 @@
 
 - summary: |
     Появление модального окна с подвтерждением действий при удалении всех товаров из корзины
- status: fail
+  status: fail
 
 - summary: |
     Успешное удаление всех товаров из корзины
- status: fail
+  status: fail
 
 - summary: |
     Успешное перезагрузка страницы после удаления всех товаров из корзины
- status: fail
+  status: fail
 
 - summary: |
     Успешное перезагрузка страницы после удаления одного товара из корзины
- status: pass
+  status: pass
  
 - summary: |
     Успешный нажатие на кнопку "Продолжить покупки" 
- status: pass
+  status: pass
 
 - summary: |
     Успешный просмотр карточки товара из корзины
- status: pass
+  status: pass
 
 - summary: |
     Успешное добавление нескольких товаров из каталога подряд 
- status: fail
+  status: fail
 
 - summary: |
     Успешное отображение выпадающего списка "Language"
- status: pass
+  status: pass
 
 - summary: |
     Успешное переключение языка на русский
- status: fail
+  status: fail
 
 - summary: |
     Успешное переключение языка на английский
- status: pass
+  status: pass
 
 - summary: |
     Успешное сохранение выбранного языка при перезагрузки страницы
- status: fail
+  status: fail
 
 - summary: |
     Успешное сохранение выбранного языка при переходе в корзину
- status: pass
+  status: pass
 
 - summary: |
     Успешное сохранение выбранного языка при переходе в каталог из корзины
- status: pass
+  status: pass
     
 - summary: |
     Успешное сохранение выбранных элементов фильтрации при смене языка
- status: pass
+  status: pass
 
 - summary: |
     Успешная адаптивность сайта на Android
- status: fail
+  status: fail
 
 - summary: |
     Успешная адаптивность сайта на IOS
- status: fail
+  status: fail
 
 - summary: |
     Успешная адаптивность сайта на планшете
- status: fail
+  status: fail
 
 - summary: |
     Успешное отображение сайта на ПК в браузере FireFox
- status: pass
+  status: pass
 
 - summary: |
     Успешное отображение сайта на ПК в браузере Safari
- status: pass
+  status: pass
 
 - summary: |
     Успешное отображение сайта на ПК в браузере Chrome
- status: pass
+  status: pass
 
 - summary: |
     Успешное отображение сайта на ПК в браузере Edge
- status: pass
+  status: pass
 
 - summary: |
     Успешная защита от XSS в поле "Search"
- status: pass
+  status: pass
 
 - summary: |
     Успешная защита от XSS в поле минимальной цены
- status: pass
+  status: pass
 
 - summary: |
     Успешная защита от XSS в поле максимальной цены
- status: pass
+  status: pass
