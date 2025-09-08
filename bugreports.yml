@@ -408,7 +408,6 @@
     FireFox	Version 141.0.3 (64-bit)
     macOS Sonoma 14.7.1
   steps-to-reproduce: |
-    Сценарий 1
     1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
     2. Добавить 5 единиц любого товара в корзину
     3. Нажать кнопку "Корзина" в навигационной панели
