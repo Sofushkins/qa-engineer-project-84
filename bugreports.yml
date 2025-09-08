@@ -197,6 +197,22 @@
     В корзине все еще находятся оформленные товары.
 
 - summary: |
+    После оформления заказа, нет перехода н страницу оплаты
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Add to cart" у любого товара
+    3. Нажать на кнопку "Cart" в навигационной панели
+    4. Нажать кнопку "Checkout"
+    5. Закрыть модальное окно
+  expected-result: |
+    Переход на страницу оплаты.
+  actual-result: |
+    Открывается корзина товара, нет доступа к оплате товаров.
+
+- summary: |
     Изображение товара сжато, вытянуто, обрезается или сплющенно в каталоге и в карточке
   environment: |
     FireFox	Version 141.0.3 (64-bit)
@@ -336,7 +352,7 @@
     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/2.png
 
 - summary: |
-    В каталоге товаров на карточке товара не отоюражается рейтинг товара
+    В каталоге товаров на карточке товара не отображается рейтинг товара
   environment: |
     FireFox	Version 141.0.3 (64-bit)
     macOS Sonoma 14.7.1
