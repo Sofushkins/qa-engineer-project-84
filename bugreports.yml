@@ -384,3 +384,20 @@
     Хэштег визуально выделяется как интерактивный элемент, но при нажатии не происходит никаких действий
     В HTML хэштег не имеет ссылки 
     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/19.png
+
+- summary: |
+    В каталога товаров, на карточку товара можно нажать за пределами бокса товара из-за отступов 
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+    Сценарий 1
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Доводить курсор слева на карточку товара
+  expected-result: |
+    Курсор меняется только в пределах карточки товара, не раньше
+    Перейти на карточку товара можно только кликнув на бокс карточки товара
+  actual-result: |
+    Область перехода на карточку товара больше, чем сам бокс карточки
+    Можно перейти на карточку нажав на поле магазина слева и справа из-за отступов
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/21.png
