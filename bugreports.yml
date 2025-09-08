@@ -334,3 +334,19 @@
     actual-result: |
     Кнопка выделяется до первого взаимодействия с сайтом после открытия следующей страницы
     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/2.png
+
+- summary: |
+    В каталоге товаров на карточке товара не отоюражается рейтинг товара
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+    Сценарий 1
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+  expected-result: |
+    На странице каталога отображаются товары с изображением, названием, рейтингом, ценой со скидкой и без нее
+    actual-result: |
+    Не отображается рейтинг товара
+    Цена со скидкой и без отобржаются
+    Название отоброжается
+    Отображается количество товаров на складе
