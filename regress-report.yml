@@ -112,7 +112,7 @@ test-cases:
       Успешная фильтрация товаров по категории и бренду одновременно
     status: pass
 
-   - summary: |
+  - summary: |
       Успешная фильтрация товаров по категории и цене одновременно
     status: pass
 
@@ -287,105 +287,105 @@ test-cases:
 bugreports:
  - summary: |
       Панель фильтрации товаров уезжает под каталог на мобильной версии сайта
-    environment: |
+   environment: |
       Safari on iOS
       IPhone 11 Pro IOS 14.6 (375x812)
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    expected-result: |
+   expected-result: |
       Страницы адаптированы под ширину экрана устройства, дизайн сайта не имеет сильных изменений
       Горизонтальная прокрутка отсутствует
       Все кнопки и элементы управления имеют достаточный размер для нажатия и не вылезают за пределы блока
       Панель фильтрации и навигация расположены удобно для использования на сенсорном экране
       Изображения и текст не обрезаются и не перекрываются
-    actual-result: |
+   actual-result: |
       Панель фильтрации отображается после католога товаров. Для просмотра панели фильтрации надо прокручивать сайт вниз
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/11.png
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/12.png
 
  - summary: |
       При поиске несуществующего в каталоге товара, сайт не выдает сообщение "Ничего не найдено!"
-    environment: |
+   environment: |
       FireFox	Version 141.0.3 (64-bit)
       macOS Sonoma 14.7.1
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Ввести в поле "Поиск" несуществующее наименование товара "Носки"
-    expected-result: |
+   expected-result: |
       Сайт выдает сообщение "Ничего не найдено!", каталог товаров пуст
-    actual-result: |
+   actual-result: |
       Каталог товаров отображается без изменений, сообщение не появляется.
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/13.png
 
-- summary: |
+ - summary: |
       При наличии всех товаров в магазине, если снять отметку с чек-бокса "В наличие", сайт не показывает результата фильтрации (Ничего не найдено)
-    environment: |
+   environment: |
       FireFox	Version 141.0.3 (64-bit)
       macOS Sonoma 14.7.1
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Снять отметку чек-бокса "В наличии"
-    expected-result: |
+   expected-result: |
       Сайт выдает сообщание "Ничего не найдено!", потому что все товары в наличии
-    actual-result: |
+   actual-result: |
       Каталог товаров отображается без изменений, сообщение не появляется.
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/14.png
 
-- summary: |
+ - summary: |
       Товары фильтруются не по скидочной цене, а по цене до скидки
-    environment: |
+   environment: |
       FireFox	Version 141.0.3 (64-bit)
       macOS Sonoma 14.7.1
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Заполнить поле минимальной цены, значение "9"
-    expected-result: |
+   expected-result: |
       Товары фильтруются согласно заданному значению
-    actual-result: |
+   actual-result: |
       Отображаются товары с ценой ниже 9, потому что их цена без скидки больше 9
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/15.png
 
-- summary: |
+ - summary: |
       При любом заполненном элементе фильтрации, исчезает кнопка перехода на следующую страницу
-    environment: |
+   environment: |
       FireFox	Version 141.0.3 (64-bit)
       macOS Sonoma 14.7.1
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Заполнит ьполе минимальной цены "100"
-    expected-result: |
+   expected-result: |
       Отображаются товары, соответстующие запросу
       есть возможность листать страницы каталога 
-    actual-result: |
+   actual-result: |
       Кнопка "Следующая" пропадает, невозможно сменить страницу каталога на следующую страницу
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/16.png
 
-- summary: |
+ - summary: |
       Кнопка "Следующая" на первой странице каталога и последующих имеет разное расположение
-    environment: |
+   environment: |
       FireFox	Version 141.0.3 (64-bit)
       macOS Sonoma 14.7.1
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Нажать кнопку "Следующая"
-    expected-result: |
+   expected-result: |
       Отображается следующая страница каталога
       Кнопка "Следующая" находится на том же месте, что и на первой странице
-    actual-result: |
+   actual-result: |
       Кнопка "Предыдущая" заменят собой кнопку "Следующая", обе кнопки смещаются вправо
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/17.png
       https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/18.png
 
-- summary: |
+ - summary: |
       При переходе в каталог товаров через навигационную панель, происходит перезагрузка страницы
-    environment: |
+   environment: |
       FireFox	Version 141.0.3 (64-bit)
       macOS Sonoma 14.7.1
-    steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Открыть каталог товаров https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Нажать кнопку "Корзина" на навигационной панели
       3. Нажать кнопку "Магазин" на навигационной панели
-    expected-result: |
+   expected-result: |
       Открывается каталог товаров без перезагрузки страницы
-    actual-result: |
+   actual-result: |
       Происходит перезагрузка страницы
