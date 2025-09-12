@@ -418,5 +418,23 @@
     Отображается сумма всех товаро в корзине с учетом скидки
   actual-result: |
     Количество единицы товара в корзине не выровнено
-    Колиечство единиц товара на складе не выровнено
     https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/22.png
+
+
+- summary: |
+    При оформлении заказа, запрос в Devtools выдает ошибку 500
+  environment: |
+    FireFox	Version 141.0.3 (64-bit)
+    macOS Sonoma 14.7.1
+  steps-to-reproduce: |
+    1. Открыть каталог товаров https://hexlet-products-store.vercel.app/
+    2. Добавить любой товарй в корзину
+    3. Нажать кнопку "Корзина" в навигационной панели
+    4. Открыть Devtools
+    5. Открыть вкладку Network
+    6. Нажать кнопку "Оформить заказ"
+  expected-result: |
+    Статус запроса 200
+  actual-result: |
+    Статус запроса 500, выдает ошибку
+    https://raw.githubusercontent.com/Sofushkins/qa-engineer-project-84/main/images/30.png
