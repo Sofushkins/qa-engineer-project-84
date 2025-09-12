@@ -287,6 +287,10 @@ test-cases:
   - summary: |
       Успешный переход по хэштегу в карточке товара
     status: pass
+
+ - summary: |
+      Проверка запросов при оформлении заказа
+    status: fail
     
 bugreports:
  - summary: |
